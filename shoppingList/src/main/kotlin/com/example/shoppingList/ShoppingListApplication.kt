@@ -10,4 +10,5 @@ class ShoppingListApplication{
 
 fun main(args: Array<String>) {
 	runApplication<ShoppingListApplication>(*args)
+
 }
