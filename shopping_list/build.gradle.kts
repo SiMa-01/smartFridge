@@ -19,23 +19,21 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.springframework.boot:spring-boot-starter-data-mongodb:2.6.2")
+	implementation("org.springframework.boot:spring-boot-starter-web:2.6.2")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.1")
+	implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")
 	implementation("io.springfox:springfox-boot-starter:3.0.0")
 
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("org.springframework.boot:spring-boot-starter-data-jpa")
-	testImplementation("org.mockito:mockito-core")
+	testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.2")
+	testImplementation("org.springframework.boot:spring-boot-starter-data-jpa:2.6.2")
+	testImplementation("org.mockito:mockito-core:3.12.4")
 	testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
-	testImplementation ("org.junit.jupiter:junit-jupiter-api:5.7.0")
-	testImplementation ("org.junit.jupiter:junit-jupiter-engine:5.7.0")
-	testImplementation ("org.mockito:mockito-core:3.6.0")
-	testImplementation ("org.springframework.boot:spring-boot-starter-data-mongodb")
+	testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
+	testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.2")
+	testImplementation("com.h2database:h2:2.2.222")
+	testImplementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0")
 
-	testImplementation("com.h2database:h2")
-	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0")
 }
 
 tasks.withType<KotlinCompile> {
